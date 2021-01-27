@@ -5,9 +5,7 @@ namespace App\Filter;
 
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\AbstractContextAwareFilter;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Util\QueryNameGeneratorInterface;
-use Doctrine\DBAL\Types\Type;
 use Doctrine\ORM\Cache;
-use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\QueryBuilder;
 
 final class DistanceFilter extends AbstractContextAwareFilter

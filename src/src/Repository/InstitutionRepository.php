@@ -20,12 +20,4 @@ class InstitutionRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, Institution::class);
     }
-
-    protected function getQueryBuilder(): QueryBuilder
-    {
-        return $this->createQueryBuilder('article')
-            ->setCacheMode(Cache::MODE_NORMAL)
-            ->setCacheable(true)
-            ->setLifetime(300);
-    }
 }
